@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+body * {
+  z-index: 1;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first-flag {
+  width: 50px;
+  height: auto;
+  margin-bottom: 30px;
+}
+.second-flag {
+  width: 50px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.container {
+  border: none;
+  background-color: #f6f7fb;
+  width: 500px;
+  padding: 30px 40px;
+  border-radius: 4px;
+}
+
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.form-control select {
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #dedede;
+}
+
+.form-control input {
+  border: 1px solid #dedede;
+  text-align: right;
+  font-size: 18px;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.form-control select:focus,
+.form-control input:focus {
+  outline: 0;
+}
+
+.rate {
+  margin: 10px 0;
+  padding: 20px;
+  font-size: 16px;
+}
