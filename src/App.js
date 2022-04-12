@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import CurrencyOne from "./CurrencyOne.js";
-import CurrencyTwo from "./CurrencyTwo";
-import ImageOne from "./ImageOne";
-import ImageTwo from "./ImageTwo";
+import CurrencyOne from "./components/CurrencyOne";
+import CurrencyTwo from "./components/CurrencyTwo";
+import ImageOne from "./components/ImageOne";
+import ImageTwo from "./components/ImageTwo";
 
 function App() {
   const currencies = [
-    { label: "Select", value: "Select" },
+    { label: "Select Country", value: "Select" },
     { label: "USD", value: "USD" },
     { label: "KRW", value: "KRW" },
     { label: "EUR", value: "EUR" },
@@ -23,8 +23,8 @@ function App() {
   const [currencyOne, setCurrencyOne] = useState("");
   const [currencyTwo, setCurrencyTwo] = useState("");
   const [rate, setRate] = useState("");
-  const [amountOne, setAmountOne] = useState("1");
-  const [amountTwo, setAmountTwo] = useState("0");
+  const [amountOne, setAmountOne] = useState(0);
+  const [amountTwo, setAmountTwo] = useState(0);
   const [flagOne, setFlagOne] = useState("");
   const [flagTwo, setFlagTwo] = useState("");
 

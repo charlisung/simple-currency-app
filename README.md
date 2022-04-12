@@ -1,8 +1,32 @@
-## Simple Currency Exchange App
 
-- Fetch exchange rates from API (https://api.exchangerate-api.com)
-- Choose two countries and get the current currency exchange rate
-- Display a flag of the chosen country
-- Update total amount
+# Currency exchange rates app
 
-![demo](https://github.com/charlisung/simple-currency-app/blob/main/Kapture%202021-09-02%20at%2022.33.44.gif)
+This app shows a real time currency exchange rates for 10 countries. The data is fetched from [ExchangeRate-API](https://api.exchangerate-api.com). 
+
+As users select(change) countries, their flags are displayed and new rates are updated.
+
+
+
+## Lessons Learned
+
+- Fetch API
+- useEffect & its dependency
+- toFixed()
+
+## Demo
+![currency](currency.gif)
+
+
+## Run Locally
+
+Install
+
+```bash
+  yarn
+```
+Start app 
+```bash
+  yarn start
+```
+
+
